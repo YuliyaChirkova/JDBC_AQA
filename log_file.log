@@ -1,0 +1,303 @@
+2021-08-19 17:39:27 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:39:32 INFO  Log:25 - Connection to DB successful!
+2021-08-19 17:39:32 INFO  Log:25 - Send request to DB: CREATE TABLE citizens (ID int(6) NOT NULL,FIRST_NAME VARCHAR(45) NOT NULL,LAST_NAME VARCHAR(45) NOT NULL,TOWN VARCHAR(45),PRIMARY KEY (id))
+2021-08-19 17:39:34 INFO  Log:25 - Table was created successfully
+2021-08-19 17:39:34 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:39:34 INFO  Log:25 - Connection to DB successful!
+2021-08-19 17:39:34 INFO  Log:25 - Send request to DB: INSERT INTO citizens (ID, FIRST_NAME, LAST_NAME, TOWN) VALUES (412890, 'Leonardo', 'Di Caprio', 'Los Angeles')
+2021-08-19 17:39:35 INFO  Log:25 - New data was inserted into table successfully
+2021-08-19 17:39:35 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:39:35 INFO  Log:25 - Connection to DB successful!
+2021-08-19 17:39:35 INFO  Log:25 - Send request to DB: SELECT * FROM citizens
+2021-08-19 17:39:35 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:39:35 INFO  Log:25 - Connection to DB successful!
+2021-08-19 17:39:35 INFO  Log:25 - Send request to DB: UPDATE citizens SET TOWN = 'LONDON' WHERE ID='412890'
+2021-08-19 17:39:35 INFO  Log:25 - Data in table was updated successfully
+2021-08-19 17:39:35 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:39:36 INFO  Log:25 - Connection to DB successful!
+2021-08-19 17:39:36 INFO  Log:25 - Send request to DB: SELECT TOWN FROM citizens WHERE ID=412890
+2021-08-19 17:39:36 INFO  Log:25 - Send request to DB: DELETE FROM citizens WHERE ID=412890
+2021-08-19 17:39:36 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:39:36 INFO  Log:25 - Connection to DB successful!
+2021-08-19 17:39:36 INFO  Log:25 - Data from table was deleted successfully
+2021-08-19 17:39:36 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:39:36 INFO  Log:25 - Connection to DB successful!
+2021-08-19 17:39:36 INFO  Log:25 - Send request to DB: DROP TABLE citizens
+2021-08-19 17:39:36 INFO  Log:25 - Table was deleted successfully
+2021-08-19 17:39:36 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:39:36 INFO  Log:25 - Connection to DB successful!
+2021-08-19 17:39:36 INFO  Log:25 - Send request to DB: SELECT * FROM address WHERE address_id=1
+2021-08-19 17:39:36 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:39:36 INFO  Log:25 - Connection to DB successful!
+2021-08-19 17:39:36 INFO  Log:25 - Send request to DB: SELECT ct.city, cntr.country FROM city ct LEFT JOIN country cntr ON ct.country_id=cntr.country_id WHERE city='Bratislava'
+2021-08-19 17:39:36 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:39:36 INFO  Log:25 - Connection to DB successful!
+2021-08-19 17:39:36 INFO  Log:25 - Send request to DB: SELECT f.title, l.name FROM film f LEFT JOIN language l ON f.language_id=l.language_id
+2021-08-19 17:50:00 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:50:04 ERROR Log:46 - Connection to DB failed!
+Unknown database 'my_db'
+2021-08-19 17:50:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 17:50:04 ERROR Log:46 - Connection to DB failed!
+Unknown database 'my_db'
+2021-08-19 18:04:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 18:04:34 INFO  Log:25 - Connection to DB successful!
+2021-08-19 18:04:34 INFO  Log:25 - Send request to DB: CREATE TABLE citizens (ID int(6) NOT NULL,FIRST_NAME VARCHAR(45) NOT NULL,LAST_NAME VARCHAR(45) NOT NULL,TOWN VARCHAR(45),PRIMARY KEY (id))
+2021-08-19 18:04:46 INFO  Log:25 - Table was created successfully
+2021-08-19 18:04:46 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 18:04:46 INFO  Log:25 - Connection to DB successful!
+2021-08-19 18:04:46 INFO  Log:25 - Send request to DB: INSERT INTO citizens (ID, FIRST_NAME, LAST_NAME, TOWN) VALUES (412890, 'Leonardo', 'Di Caprio', 'Los Angeles')
+2021-08-19 18:04:47 INFO  Log:25 - New data was inserted into table successfully
+2021-08-19 18:04:47 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 18:04:48 INFO  Log:25 - Connection to DB successful!
+2021-08-19 18:04:48 INFO  Log:25 - Send request to DB: SELECT * FROM citizens
+2021-08-19 23:05:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:05:34 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:05:34 INFO  Log:25 - Send request to DB: CREATE TABLE citizens (ID int(6) NOT NULL,FIRST_NAME VARCHAR(45) NOT NULL,LAST_NAME VARCHAR(45) NOT NULL,TOWN VARCHAR(45),PRIMARY KEY (id))
+2021-08-19 23:05:35 ERROR Log:46 - Table was not created. Reason:
+Table 'citizens' already exists
+2021-08-19 23:07:07 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:07:10 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:07:10 INFO  Log:25 - Send request to DB: CREATE TABLE citizens (ID int(6) NOT NULL,FIRST_NAME VARCHAR(45) NOT NULL,LAST_NAME VARCHAR(45) NOT NULL,TOWN VARCHAR(45),PRIMARY KEY (id))
+2021-08-19 23:07:10 ERROR Log:46 - Table was not created. Reason:
+Table 'citizens' already exists
+2021-08-19 23:07:48 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:07:52 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:07:52 INFO  Log:25 - Send request to DB: CREATE TABLE citizens (ID int(6) NOT NULL,FIRST_NAME VARCHAR(45) NOT NULL,LAST_NAME VARCHAR(45) NOT NULL,TOWN VARCHAR(45),PRIMARY KEY (id))
+2021-08-19 23:07:52 ERROR Log:46 - Table was not created. Reason:
+Table 'citizens' already exists
+2021-08-19 23:15:52 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:15:56 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:15:56 INFO  Log:25 - Send request to DB: CREATE TABLE citizens (ID int(6) NOT NULL,FIRST_NAME VARCHAR(45) NOT NULL,LAST_NAME VARCHAR(45) NOT NULL,TOWN VARCHAR(45),PRIMARY KEY (id))
+2021-08-19 23:15:56 INFO  Log:25 - Table was created successfully
+2021-08-19 23:21:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:21:44 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:21:44 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL
+2021-08-19 23:21:44 ERROR Log:46 - Table was not created. Reason:
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2021-08-19 23:23:35 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:23:38 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:23:38 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL)
+2021-08-19 23:23:38 INFO  Log:25 - Table was created successfully
+2021-08-19 23:42:54 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:42:56 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:42:56 INFO  Log:25 - Send request to DB: INSERT INTO users VALUES (11, 'Summer', 'time')
+2021-08-19 23:42:57 INFO  Log:25 - New data was inserted into table successfully
+2021-08-19 23:42:57 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:42:57 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:42:57 INFO  Log:25 - Send request to DB: SELECT * FROM users
+2021-08-19 23:55:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:55:14 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:55:14 INFO  Log:25 - Send request to DB: INSERT INTO users VALUES (11, 'Summer', 'time')
+2021-08-19 23:55:14 INFO  Log:25 - New data was inserted into table successfully
+2021-08-19 23:55:14 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:55:14 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:55:14 INFO  Log:25 - Send request to DB: SELECT FROM users WHERE ID = 11
+2021-08-19 23:55:14 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM users WHERE ID = 11' at line 1
+2021-08-19 23:56:09 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:56:12 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:56:12 INFO  Log:25 - Send request to DB: INSERT INTO users VALUES (11, 'Summer', 'time')
+2021-08-19 23:56:12 INFO  Log:25 - New data was inserted into table successfully
+2021-08-19 23:56:12 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:56:12 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:56:12 INFO  Log:25 - Send request to DB: SELECT FROM users WHERE ID = 11
+2021-08-19 23:56:12 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM users WHERE ID = 11' at line 1
+2021-08-19 23:58:21 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:58:24 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:58:24 INFO  Log:25 - Send request to DB: INSERT INTO users VALUES (11, 'Summer', 'time')
+2021-08-19 23:58:24 INFO  Log:25 - New data was inserted into table successfully
+2021-08-19 23:58:24 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-19 23:58:24 INFO  Log:25 - Connection to DB successful!
+2021-08-19 23:58:24 INFO  Log:25 - Send request to DB: SELECT FROM users
+2021-08-19 23:58:24 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM users' at line 1
+2021-08-20 00:03:45 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:03:47 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:03:47 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-20 00:03:48 INFO  Log:25 - Table was created successfully
+2021-08-20 00:04:34 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:04:38 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:04:38 INFO  Log:25 - Send request to DB: INSERT INTO users VALUES (11, 'Summer', 'time')
+2021-08-20 00:04:38 INFO  Log:25 - New data was inserted into table successfully
+2021-08-20 00:04:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:04:39 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:04:39 INFO  Log:25 - Send request to DB: SELECT FROM users
+2021-08-20 00:04:39 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM users' at line 1
+2021-08-20 00:05:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:05:31 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:05:31 INFO  Log:25 - Send request to DB: INSERT INTO users VALUES (11, 'Summer', 'time')
+2021-08-20 00:05:31 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '11' for key 'users.PRIMARY'
+2021-08-20 00:05:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:05:31 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:05:31 INFO  Log:25 - Send request to DB: SELECT FROM users
+2021-08-20 00:05:31 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM users' at line 1
+2021-08-20 00:25:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:25:45 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:25:45 INFO  Log:25 - Send request to DB: INSERT INTO (ID, Login, Password) users VALUES (11, 'Summer', 'time')
+2021-08-20 00:25:45 ERROR Log:46 - New data was not inserted into table. Reason:
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(ID, Login, Password) users VALUES (11, 'Summer', 'time')' at line 1
+2021-08-20 00:25:45 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:25:45 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:25:45 INFO  Log:25 - Send request to DB: SELECT FROM users
+2021-08-20 00:25:45 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM users' at line 1
+2021-08-20 00:30:39 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:30:41 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:30:41 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL)
+2021-08-20 00:30:41 INFO  Log:25 - Table was created successfully
+2021-08-20 00:30:53 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:30:56 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:30:56 INFO  Log:25 - Send request to DB: INSERT INTO users (ID, Login, Password) VALUES (11, 'Summer', 'time')
+2021-08-20 00:30:56 INFO  Log:25 - New data was inserted into table successfully
+2021-08-20 00:30:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:30:56 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:30:56 INFO  Log:25 - Send request to DB: SELECT FROM users
+2021-08-20 00:30:56 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM users' at line 1
+2021-08-20 00:32:17 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:32:20 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:32:20 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL)
+2021-08-20 00:32:20 INFO  Log:25 - Table was created successfully
+2021-08-20 00:32:20 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:32:21 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:32:21 INFO  Log:25 - Send request to DB: INSERT INTO users (ID, Login, Password) VALUES (11, 'Summer', 'time')
+2021-08-20 00:32:21 INFO  Log:25 - New data was inserted into table successfully
+2021-08-20 00:32:21 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:32:21 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:32:21 INFO  Log:25 - Send request to DB: SELECT * FROM users
+2021-08-20 00:35:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:35:59 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:35:59 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL)
+2021-08-20 00:36:01 INFO  Log:25 - Table was created successfully
+2021-08-20 00:36:01 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:36:01 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:36:01 INFO  Log:25 - Send request to DB: INSERT INTO users (ID, Login, Password) VALUES (11, 'Summer', 'time')
+2021-08-20 00:36:01 INFO  Log:25 - New data was inserted into table successfully
+2021-08-20 00:36:01 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 00:36:01 INFO  Log:25 - Connection to DB successful!
+2021-08-20 00:36:01 INFO  Log:25 - Send request to DB: SELECT * FROM users
+2021-08-20 14:52:16 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 14:52:28 INFO  Log:25 - Connection to DB successful!
+2021-08-20 14:52:28 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL)
+2021-08-20 14:52:29 INFO  Log:25 - Table was created successfully
+2021-08-20 14:52:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 14:52:30 INFO  Log:25 - Connection to DB successful!
+2021-08-20 14:52:30 INFO  Log:25 - Send request to DB: INSERT INTO users (ID, Login, Password) VALUES (11, 'Summer', 'time')
+2021-08-20 14:52:30 INFO  Log:25 - New data was inserted into table successfully
+2021-08-20 14:52:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 14:52:30 INFO  Log:25 - Connection to DB successful!
+2021-08-20 14:52:30 INFO  Log:25 - Send request to DB: SELECT * FROM users
+2021-08-20 15:12:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:12:46 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:12:46 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL,PRIMARY KEY (id) AUTO_INCREMENT)
+2021-08-20 15:12:46 ERROR Log:46 - Table was not created. Reason:
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AUTO_INCREMENT)' at line 1
+2021-08-20 15:13:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:13:47 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:13:47 INFO  Log:25 - Send request to DB: INSERT INTO users (ID, Login, Password) VALUES (11, 'Summer', 'time')
+2021-08-20 15:13:47 ERROR Log:46 - New data was not inserted into table. Reason:
+Table 'sakila.users' doesn't exist
+2021-08-20 15:13:47 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:13:47 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:13:47 INFO  Log:25 - Send request to DB: SELECT (ID, Login, Password) FROM users
+2021-08-20 15:13:47 ERROR Log:46 - Table 'sakila.users' doesn't exist
+2021-08-20 15:14:48 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:14:50 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:14:50 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL,PRIMARY KEY (id) AUTO_INCREMENT)
+2021-08-20 15:14:50 ERROR Log:46 - Table was not created. Reason:
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AUTO_INCREMENT)' at line 1
+2021-08-20 15:14:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:14:50 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:14:50 INFO  Log:25 - Send request to DB: INSERT INTO users (ID, Login, Password) VALUES (11, 'Summer', 'time')
+2021-08-20 15:14:50 ERROR Log:46 - New data was not inserted into table. Reason:
+Table 'sakila.users' doesn't exist
+2021-08-20 15:14:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:14:51 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:14:51 INFO  Log:25 - Send request to DB: SELECT (ID, Login, Password) FROM users
+2021-08-20 15:14:51 ERROR Log:46 - Table 'sakila.users' doesn't exist
+2021-08-20 15:16:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:16:06 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:16:06 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL)
+2021-08-20 15:16:06 INFO  Log:25 - Table was created successfully
+2021-08-20 15:16:21 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:16:23 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:16:23 INFO  Log:25 - Send request to DB: INSERT INTO users (ID, Login, Password) VALUES (11, 'Summer', 'time')
+2021-08-20 15:16:24 INFO  Log:25 - New data was inserted into table successfully
+2021-08-20 15:16:24 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:16:24 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:16:24 INFO  Log:25 - Send request to DB: SELECT * FROM users
+2021-08-20 15:21:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:21:45 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:21:45 INFO  Log:25 - Send request to DB: UPDATE users SET Login = 'Spring' WHERE ID='11'
+2021-08-20 15:21:45 INFO  Log:25 - Data in table was updated successfully
+2021-08-20 15:21:45 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:21:45 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:21:45 INFO  Log:25 - Send request to DB: SELECT Login FROM users WHERE ID=11
+2021-08-20 15:25:11 INFO  Log:25 - Send request to DB: DELETE FROM users WHERE ID=11
+2021-08-20 15:25:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:25:13 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:25:13 INFO  Log:25 - Data from table was deleted successfully
+2021-08-20 15:26:33 INFO  Log:25 - Send request to DB: DELETE FROM users WHERE ID=11
+2021-08-20 15:26:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:26:35 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:26:35 INFO  Log:25 - Data from table was deleted successfully
+2021-08-20 15:27:45 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:27:48 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:27:48 INFO  Log:25 - Send request to DB: DROP TABLE users
+2021-08-20 15:27:48 INFO  Log:25 - Table was deleted successfully
+2021-08-20 15:58:13 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:58:16 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:58:16 INFO  Log:25 - Send request to DB: SELECT * FROM city WHERE country_id=101
+2021-08-20 15:59:10 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 15:59:13 INFO  Log:25 - Connection to DB successful!
+2021-08-20 15:59:13 INFO  Log:25 - Send request to DB: SELECT * FROM city WHERE country_id=101
+2021-08-20 16:17:58 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 16:18:01 INFO  Log:25 - Connection to DB successful!
+2021-08-20 16:18:01 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL,PRIMARY KEY (ID))
+2021-08-20 16:18:01 INFO  Log:25 - Table was created successfully
+2021-08-20 16:18:01 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 16:18:01 INFO  Log:25 - Connection to DB successful!
+2021-08-20 16:18:01 INFO  Log:25 - Send request to DB: INSERT INTO users (ID, Login, Password) VALUES (11, 'Summer', 'time')
+2021-08-20 16:18:01 INFO  Log:25 - New data was inserted into table successfully
+2021-08-20 16:18:01 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-20 16:18:01 INFO  Log:25 - Connection to DB successful!
+2021-08-20 16:18:01 INFO  Log:25 - Send request to DB: SELECT * FROM users
+2021-08-21 00:17:27 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:17:31 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:17:31 INFO  Log:25 - Send request to DB: SELECT ad.district, cust.last_name from address ad LEFT JOIN customer cust ON ad.address_id=cust.address_id WHERE last_name='SMITH'
+2021-08-21 00:18:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:18:32 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:18:32 INFO  Log:25 - Send request to DB: SELECT ad.district, cust.last_name from address ad JOIN customer cust ON ad.address_id=cust.address_id WHERE last_name='SMITH'
+2021-08-21 00:27:14 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:27:17 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:27:17 INFO  Log:25 - Send request to DB: DROP TABLE users
+2021-08-21 00:27:18 INFO  Log:25 - Table was deleted successfully
+2021-08-21 00:28:53 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:28:56 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:28:56 INFO  Log:25 - Send request to DB: CREATE TABLE users (ID int(6) NOT NULL,Login VARCHAR(45) NOT NULL,Password VARCHAR(45) NOT NULL,PRIMARY KEY (ID))
+2021-08-21 00:28:57 INFO  Log:25 - Table was created successfully
+2021-08-21 00:28:57 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:28:57 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:28:57 INFO  Log:25 - Send request to DB: INSERT INTO users (ID, Login, Password) VALUES (11, 'Summer', 'time')
+2021-08-21 00:28:57 INFO  Log:25 - New data was inserted into table successfully
+2021-08-21 00:28:57 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:28:57 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:28:57 INFO  Log:25 - Send request to DB: SELECT * FROM users
+2021-08-21 00:28:58 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:28:58 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:28:58 INFO  Log:25 - Send request to DB: UPDATE users SET Login = 'Autumn' WHERE ID='11'
+2021-08-21 00:28:58 INFO  Log:25 - Data in table was updated successfully
+2021-08-21 00:28:58 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:28:59 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:28:59 INFO  Log:25 - Send request to DB: SELECT Login FROM users WHERE ID=11
+2021-08-21 00:28:59 INFO  Log:25 - Send request to DB: DELETE FROM users WHERE ID=11
+2021-08-21 00:28:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:28:59 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:29:00 INFO  Log:25 - Data from table was deleted successfully
+2021-08-21 00:29:00 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:29:00 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:29:00 INFO  Log:25 - Send request to DB: DROP TABLE users
+2021-08-21 00:29:00 INFO  Log:25 - Table was deleted successfully
+2021-08-21 00:29:00 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:29:00 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:29:00 INFO  Log:25 - Send request to DB: SELECT * FROM city WHERE country_id=101
+2021-08-21 00:29:00 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila?serverTimezone=Europe/Moscow by user root
+2021-08-21 00:29:00 INFO  Log:25 - Connection to DB successful!
+2021-08-21 00:29:00 INFO  Log:25 - Send request to DB: SELECT ad.district, cust.last_name from address ad JOIN customer cust ON ad.address_id=cust.address_id WHERE last_name='SMITH'
